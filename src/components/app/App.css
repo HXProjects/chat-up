@@ -1,0 +1,201 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+  }
+
+
+.App {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-areas:
+    "header "
+    "main-section";
+  grid-template-rows: 15% 85%;
+  text-align: center; 
+  height: 100mvh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-title{
+  color:#d3e2d68a;
+  font-size:2rem;
+}
+.App-header {
+  background-color: #162e26;
+  grid-area: header;   
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  position:fixed;
+  width:100%;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.button-login{
+  border: 1px solid #61dafb;
+  border-radius: 10px;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  height:5rem;
+  width:7rem;
+}
+.button-login:hover{
+  background: #61dafb;
+}
+.chat-room{
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-right: solid 3px rgba(104, 103, 103, 0.151);
+  border-left: solid 3px rgba(104, 103, 103, 0.151);
+  min-height:50rem; 
+  width:80%; 
+  justify-content: center;
+  
+}
+
+.header_username{
+color: #1dfd4285;
+width:20rem;
+overflow: hidden;
+font-size:1.2rem;
+font-weight:900;
+
+}
+.header_log-out_button{
+  border:none;
+  background-color: #2d5a4b55;
+  color:#ffffff91;
+  font-weight: 800;
+  text-transform: uppercase;
+  width:8rem;
+  height:2rem;
+}
+.header_log-out_button:hover{
+  background: #356857;
+}
+.input-messsage{
+  border: none;
+  border-left: solid 2px rgba(104, 103, 103, 0.363);
+  grid-area: input; 
+  font-size: 1.2rem;
+  height:10rem;  
+  letter-spacing: 1px;
+  width:95%;  
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:5px;
+}
+.input-user-icon{
+  background: #61dafb;
+  border-radius: 50%;
+  width:4rem;
+  height:4rem;
+  margin:2rem;
+}
+.log-in-container{
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+  background: #e9ecea62;
+  grid-area: main-section;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top:5rem;
+}
+.message{
+  white-space: pre-wrap;
+}
+.messages-list{
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 12rem;
+}
+
+.new-message{
+  border-top: solid 4px rgba(104, 103, 103, 0.363);
+  background: #ffffff;
+  display:flex;
+  flex-direction: initial;  
+  height:10rem;
+  letter-spacing: 2px;
+  position: fixed;
+  bottom:0;
+  width:80%;
+}
+
+.username{  
+  border: 1px solid #61dafb;
+  border-radius: 10px;
+  color:#22463a;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 5rem;
+  width:20rem;
+}
+.user-icon{
+  background: #61dafb;
+  border-radius: 50%;
+  width:3rem;
+  height:3rem;
+  margin:1rem;
+}
+.user-message-box{
+  display: flex;
+  margin-top:1rem;
+  text-align: left;
+  word-wrap: break-word;
+  
+}
+.user-message-content{
+  background-color: rgba(238, 250, 243, 0.486);  
+  border-radius: 0px 30px 30px 30px;
+}
+.user-message-name{
+  color:#07964378;
+  font-size: 1.2rem;
+  font-weight:900;
+  font-size: 1.2rem;
+  margin-left:0.5rem;
+  width:55rem;
+  letter-spacing: 2px;
+  text-align: start;
+  top:0;
+  overflow: hidden;
+}
+.user-message-time{
+  color:#31463f85;
+}
+.user-message{  
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  width:65rem;
+}
+
+ul li{
+  color: #61dafb;
+  list-style-type: none;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
