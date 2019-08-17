@@ -3,7 +3,7 @@ import {  recievedMessage, logIn} from '../actions';
 import notifyMe from '../utils/notifications'
 
 const setupSocket = (dispatch, username) => {
-  const socket = new WebSocket('ws://st-chat.shas.tel');
+  const socket = new WebSocket('wss://st-chat.shas.tel');
   
   socket.onopen = () => {    
     dispatch(logIn(username));   
