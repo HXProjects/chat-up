@@ -8,7 +8,7 @@ const ChatInput = (props) => {
   return (
     <section className="new-message" >
     <img src={Cat} className="input-user-icon" alt="cat icon"/>      
-    <input 
+    <textarea 
       className="input-messsage"
       onKeyPress={(e) =>{
         if(e.key === 'Enter') {
@@ -21,7 +21,7 @@ const ChatInput = (props) => {
       ref={(node)=> {
         input=node
       }}
-    />    
+    ></textarea>    
     </section>
   )  
 }

@@ -1,17 +1,19 @@
 body{
   margin:0;
   font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
-  overflow: hidden;
   }
 
 
 .App {
-  display: grid;
+  display: flex;
+  background: #e9ecea62;
+
   grid-template-columns: auto ;
   grid-template-areas:
-    "header "
-    "main-section";
-  grid-template-rows: 15% 85%;
+    "header header "
+    "main-section main-section" ;
+  grid-template-rows: 15vh 85vh;
+  justify-content: center;
   text-align: center; 
   height: 100mvh;
 }
@@ -26,16 +28,16 @@ body{
   font-size:2rem;
 }
 .App-header {
-  background-color: #162e26;
-  grid-area: header;   
-  height: 5rem;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  position:fixed;
-  width:100%;
+  background-color: #162e26;
   color: white;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  grid-area: header;   
+  height: 5rem;  
+  justify-content: center;  
+  position:fixed;
+  width:150vh;
 }
 
 .App-link {
@@ -59,8 +61,8 @@ body{
   background: #ffffff;
   border-right: solid 3px rgba(104, 103, 103, 0.151);
   border-left: solid 3px rgba(104, 103, 103, 0.151);
-  min-height:50rem; 
-  width:80%; 
+  min-height:50rem;
+  width: inherit;  
   justify-content: center;
   
 }
@@ -71,8 +73,8 @@ width:20rem;
 overflow: hidden;
 font-size:1.2rem;
 font-weight:900;
-
 }
+
 .header_log-out_button{
   border:none;
   background-color: #2d5a4b55;
@@ -82,27 +84,30 @@ font-weight:900;
   width:8rem;
   height:2rem;
 }
+
 .header_log-out_button:hover{
   background: #356857;
 }
+
 .input-messsage{
   border: none;
   border-left: solid 2px rgba(104, 103, 103, 0.363);
   grid-area: input; 
   font-size: 1.2rem;
-  height:10rem;  
-  letter-spacing: 1px;
-  width:95%;  
+  height: 10rem;  
+  letter-spacing: 1px;   
   margin-left: auto;
   margin-right: auto;
-  padding-left:5px;
+  padding-left: 5px;
+  white-space: pre-wrap;
+  width:inherit; 
 }
 .input-user-icon{
   background: #61dafb;
   border-radius: 50%;
-  width:4rem;
   height:4rem;
   margin:2rem;
+  width:4rem;  
 }
 .log-in-container{
   display: flex;
@@ -110,9 +115,9 @@ font-weight:900;
 }
 
 .main{
-  background: #e9ecea62;
   grid-area: main-section;
-  width: 100%;
+  width: 150vh;
+  min-height:100vh;
   display: flex;
   justify-content: center;
   margin-top:5rem;
@@ -121,8 +126,6 @@ font-weight:900;
   white-space: pre-wrap;
 }
 .messages-list{
-  overflow-y: auto;
-  overflow-x: hidden;
   margin-bottom: 12rem;
 }
 
@@ -135,7 +138,7 @@ font-weight:900;
   letter-spacing: 2px;
   position: fixed;
   bottom:0;
-  width:80%;
+  width:150vh;
 }
 
 .username{  
@@ -150,20 +153,28 @@ font-weight:900;
 .user-icon{
   background: #61dafb;
   border-radius: 50%;
+  flex-grow:2;
   width:3rem;
   height:3rem;
   margin:1rem;
+  max-width: 3rem;
+  max-height: 3rem;
 }
 .user-message-box{
   display: flex;
   margin-top:1rem;
   text-align: left;
   word-wrap: break-word;
+  min-height: 3rem;
+  
   
 }
 .user-message-content{
   background-color: rgba(238, 250, 243, 0.486);  
   border-radius: 0px 30px 30px 30px;
+  flex-grow: 30;
+  padding: 0 15px 0 15px;
+  max-width: 90%;
 }
 .user-message-name{
   color:#07964378;
@@ -171,7 +182,6 @@ font-weight:900;
   font-weight:900;
   font-size: 1.2rem;
   margin-left:0.5rem;
-  width:55rem;
   letter-spacing: 2px;
   text-align: start;
   top:0;
@@ -179,13 +189,15 @@ font-weight:900;
 }
 .user-message-time{
   color:#31463f85;
+  flex-grow: 1;
+  min-width: 7rem;
+  padding: 0 0 20px 10px;
 }
 .user-message{  
   padding-left: 5px;
   padding-top: 5px;
   font-size: 1rem;
   letter-spacing: 2px;
-  width:65rem;
 }
 
 ul li{
