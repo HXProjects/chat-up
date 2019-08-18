@@ -5,11 +5,11 @@ import Cat from '../../images.jpg'
 
 
 const Message = ({author, message, id,time}) => {
-  const chatroom = document.querySelector('.chat');
-  chatroom.scrollTop = 9999; 
+ // const chatroom = document.querySelector('.chat');
+  //chatroom.scrollTop = 9999; 
   return(
 <div className="user-message-box">
-  <img src={Cat} className="user-icon"/>
+  <img src={Cat} className="user-icon" alt="user ico"/>
   <div className="user-message-content">
     <div className="user-message-name">{author}</div> 
     <div className="user-message">{message}</div>

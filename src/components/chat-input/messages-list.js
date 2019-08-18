@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ScrollableFeed from 'react-scrollable-feed';
 import Message from './message';
 
 const MessagesList = ({ messages }) => ( 
   <section className="messages-list">
-    <div className="chat">
+    <ScrollableFeed> 
+      <div className="chat">
       {
         messages.map(message => (
           <Message 
@@ -12,7 +14,8 @@ const MessagesList = ({ messages }) => (
             {...message}
           />
       ))}
-    </div>
+      </div>
+    </ScrollableFeed>
   </section>
 )
 

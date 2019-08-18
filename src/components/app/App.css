@@ -1,13 +1,13 @@
 body{
   margin:0;
   font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+  overflow: hidden;
   }
 
 
 .App {
   display: flex;
   background: #e9ecea62;
-
   grid-template-columns: auto ;
   grid-template-areas:
     "header header "
@@ -16,6 +16,7 @@ body{
   justify-content: center;
   text-align: center; 
   height: 100mvh;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -61,10 +62,9 @@ body{
   background: #ffffff;
   border-right: solid 3px rgba(104, 103, 103, 0.151);
   border-left: solid 3px rgba(104, 103, 103, 0.151);
-  min-height:50rem;
-  width: inherit;  
+  min-height:95%;  
+  width: inherit;
   justify-content: center;
-  
 }
 
 .header_username{
@@ -94,7 +94,7 @@ font-weight:900;
   border-left: solid 2px rgba(104, 103, 103, 0.363);
   grid-area: input; 
   font-size: 1.2rem;
-  height: 10rem;  
+  height: 5rem;  
   letter-spacing: 1px;   
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +106,7 @@ font-weight:900;
   background: #61dafb;
   border-radius: 50%;
   height:4rem;
-  margin:2rem;
+  margin:1rem;
   width:4rem;  
 }
 .log-in-container{
@@ -126,19 +126,25 @@ font-weight:900;
   white-space: pre-wrap;
 }
 .messages-list{
-  margin-bottom: 12rem;
+  top:10rem;
+  height:80vh;
+  max-height: 80vh;
+  margin-top: 0rem;
+  margin-bottom: 15rem;
 }
+
 
 .new-message{
   border-top: solid 4px rgba(104, 103, 103, 0.363);
   background: #ffffff;
   display:flex;
   flex-direction: initial;  
-  height:10rem;
+  height:10%;
   letter-spacing: 2px;
   position: fixed;
   bottom:0;
   width:150vh;
+  margin-top:10%;
 }
 
 .username{  

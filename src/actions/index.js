@@ -1,6 +1,5 @@
 import * as types from '../constants/action-types';
 
-let nextMessageId = 0;
 let nextUserId = 0;
 
 export const addMessage = (message, author) => (
