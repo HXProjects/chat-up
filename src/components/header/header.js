@@ -1,11 +1,17 @@
 import React from 'react';
 import { removeUser } from '../../utils/local-storage';
 import customHistory from '../../routes/routes-history';
+import { Offline, Online } from "react-detect-offline";
 
 const Header = (props) => {      
     const  element = (
       <>
-        <div className="header_username">{props.user}</div>
+        <div className="header_username">
+          {props.user}
+          <Online> online</Online>
+          <Offline> ofline</Offline>
+        </div>
+        
         <button
         className="header_log-out_button" 
           onClick = { () => {

@@ -74,6 +74,10 @@ overflow: hidden;
 font-size:1.2rem;
 font-weight:900;
 }
+.header_username span {
+  margin:2rem;
+  font-weight: 100;
+}
 
 .header_log-out_button{
   border:none;
