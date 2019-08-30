@@ -1,5 +1,6 @@
 Web chat  “Chat-up” (2019): React, Redux, WebSocket, responsive/adaptive markup
-[deployed version](https://youthful-wescoff-89bfae.netlify.com/)
+
+**see** [deployed version](https://youthful-wescoff-89bfae.netlify.com/)
 ## Available Scripts
 
 In the project directory, you can run:
