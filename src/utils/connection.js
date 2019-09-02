@@ -2,6 +2,7 @@ import {recievedMessage, closeConnection, restoreConnection} from '../actions';
 import username from './name';
 import moment from 'moment';
 import store from '../store';
+import notifyMe from './notifications';
 
 class setupService  {
   data  = []; 
@@ -105,6 +106,8 @@ sendMessage = (message) =>{
       message: message
     })
   }
+  notifyMe();
 }
+
 };
 export default setupService;
