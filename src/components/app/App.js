@@ -5,11 +5,12 @@ import Chat from '../chat/chat';
 import { HeaderContainer } from '../../containers/header-container';
 import {LogInContainer} from '../../containers/login'
 import { loadUser } from '../../utils/local-storage';
+import setupService from '../../utils/connection';
 
+const serviceConnection = new setupService();
 class App extends Component { 
   
-  render() {
-    
+  render() {    
     let user = loadUser();
     
     if(user===undefined){
@@ -20,7 +21,7 @@ class App extends Component {
       return(
         <div className="App">             
         <HeaderContainer user={user}/>     
-         <Chat  />
+         <Chat data={serviceConnection}/>
         </div>
       )        
     }   

@@ -1,6 +1,10 @@
 export const ADD_MESSAGE = 'ADD_MESSAGE';
 export const RECEIVED_MESSAGE = 'RECEIVED_MESSAGE';
+export const LOAD_MESSAGE = 'LOAD_MESSAGE';
 export const CHANGE_USERNAME = 'CHANGE_USERNAME';
 export const USERS_LIST = 'USERS_LIST';
 export const LOG_IN = 'LOG_IN';
 export const LOG_OUT = 'LOG_OUT';
+export const ADD_SOCKET = 'ADD_SOCKET';
+export const CONNECTION_LOST = 'CONNECTION_LOST';
+export const CONNECTION_RESTORE = 'CONNECTION_RESTORE';

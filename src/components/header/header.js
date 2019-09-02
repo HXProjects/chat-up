@@ -9,7 +9,7 @@ const Header = (props) => {
         <div className="header_username">
           {props.user}
           <Online> online</Online>
-          <Offline> ofline</Offline>
+          <Offline> offline</Offline>
         </div>
         
         <button

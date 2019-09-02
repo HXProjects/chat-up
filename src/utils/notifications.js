@@ -13,17 +13,16 @@ function notifyMe() {
   } 
   
   const user = localStorage.getItem('user-name');
-
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
   }
 
   else if (Notification.permission === "granted" && user!==null) {
     if(document[hidden]){
-      const notification = new Notification("you have a new message");
+      const notification = new Notification("New message in Chat-up");
     setTimeout(function(){
       notification.close()
-    }, 10000)
+    }, 7000)
     }
     
   }

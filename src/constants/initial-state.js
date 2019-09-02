@@ -1,5 +1,8 @@
 export default {
   messages: [],
   logIn: false,
-  userName: ''
+  userName: '',
+  socket:{},
+  unreadMessages:[],
+  connection:false
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ScrollableFeed from 'react-scrollable-feed';
 import { MessageInput } from '../../containers/add-message';
 import { MessageList } from '../../containers/messages-list';
 
@@ -10,8 +9,8 @@ class Chat extends Component {
     return (
       <div className="main">
         <div className="chat-room">
-          <MessageList />
-          <MessageInput />                     
+          <MessageList data ={this.props.data}/>
+          <MessageInput data={this.props.data}/>                     
         </div>      
       </div>
     )

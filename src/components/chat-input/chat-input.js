@@ -4,7 +4,8 @@ import Cat from '../../images.jpg'
 
 const ChatInput = (props) => { 
   let input; 
- 
+  console.log('2props')
+ console.log(props.data)
   return (
     <section className="new-message" >
     <img src={Cat} className="input-user-icon" alt="cat icon"/>      
@@ -12,7 +13,8 @@ const ChatInput = (props) => {
       className="input-messsage"
       onKeyPress={(e) =>{
         if(e.key === 'Enter') {
-          props.dispatch(input.value)
+          console.log(props);
+          props.data.sendMessage(input.value)
           input.value = ''
         }
       }}

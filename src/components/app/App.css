@@ -68,19 +68,21 @@ body{
 }
 
 .header_username{
-color: #1dfd4285;
+color: #ffffffc5;
 width:20rem;
 overflow: hidden;
 font-size:1.2rem;
 font-weight:900;
 }
 .header_username span {
+  color: #1dfd4285;
   margin:2rem;
   font-weight: 100;
 }
 
 .header_log-out_button{
   border:none;
+  border-radius: 5px;
   background-color: #2d5a4b55;
   color:#ffffff91;
   font-weight: 800;
@@ -113,11 +115,22 @@ font-weight:900;
   margin:1rem;
   width:4rem;  
 }
+.log-in-root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .log-in-container{
   display: flex;
   justify-content: center;
 }
-
+.log-in-welcom-title{
+  justify-content: center;
+  align-items: center;
+}
 .main{
   grid-area: main-section;
   width: 150vh;

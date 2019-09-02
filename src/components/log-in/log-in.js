@@ -7,8 +7,8 @@ const Login = (props) => {
   let input;
 
   return (
-    <div >    
-      <h2>Enter your name to continue...</h2>
+    <div className="log-in-root">    
+      <h2 className="log-in-welcom-title">Log into chat</h2>
       <div className="log-in-container">
         <div className="input">         
           <input 
